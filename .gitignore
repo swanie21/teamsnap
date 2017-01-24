@@ -43,6 +43,4 @@ jspm_packages
 # error-shots
 errorShots
 
-*.bundle.js
-
 .DS_store
