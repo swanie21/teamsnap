@@ -1,0 +1,20 @@
+@mixin photo-format {
+  border: 8px solid #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+@mixin paragraph-format {
+  color: $dark-gray-text;
+  line-height: 26px;
+}
+
+@mixin article-title($color) {
+  color: $color;
+  font-family: $dosis-rounded-font;
+  font-size: 18px;
+  font-weight: 400;
+}

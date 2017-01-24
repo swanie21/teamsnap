@@ -1,0 +1,26 @@
+.qualities {
+  background-color: $off-white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.quality {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  margin: auto;
+  padding: 10px;
+  width: 350px;
+  p {
+    @include paragraph-format;
+    text-align: center;
+  }
+  img {
+    padding-top: 25px;
+  }
+}

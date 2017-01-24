@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: $open-sans-font;
+  height: 100%;
+}
+
+h3 {
+  font: {
+    family: $dosis-rounded-font;
+    size: 25px;
+    weight: 700;
+  }
+  padding: 40px 0 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+h4 {
+  @include article-title(darken($light-blue-text, 15%));
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.copyright {
+  background-color: #0A3A67;
+  color: $white;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}

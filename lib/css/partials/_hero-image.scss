@@ -1,0 +1,35 @@
+.hero-image {
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url('./img/soccer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100%;
+  opacity: 0.8;
+  position: relative;
+}
+
+.hero-title {
+  background-color: rgba(17, 17, 17, 0.9);
+  color: $white;
+  font: {
+    family: $dosis-rounded-font;
+    size: 30px;
+    weight: 700;
+  }
+  line-height: 35px;
+  margin: auto;
+  padding: 20px 10px;
+  text-align: center;
+  text-shadow: 0 1px 2px #333;
+  width: 80%;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}

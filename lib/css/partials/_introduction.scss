@@ -1,0 +1,45 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 40px;
+  width: 95%;
+  p {
+    @include paragraph-format;
+  }
+  h3 {
+    padding: 40px 0 10px 25px;
+    text-align: left;
+  }
+  article {
+    margin: auto;
+    width: 85%;
+  }
+  a {
+    color: darken($light-blue-text, 15%);
+    text-decoration: none;
+  }
+}
+
+p.introduction-title {
+  @include article-title($darker-blue-text);
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 900px) {
+  .introduction {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    article {
+      width: 30%;
+    }
+    h3 {
+      padding: 40px 0 10px 20px;
+    }
+  }
+
+  .introduction-title {
+    font-size: 20px;
+  }
+}
